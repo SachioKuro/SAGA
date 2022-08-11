@@ -23,9 +23,9 @@
     }()
 
     #define SAGA_LOG(level, message, ...) \
-        std::string msg = "[%s] %s "; \
+        {std::string msg = "[%s] %s "; \
         msg = msg.append(std::string(message)); \
-        printf(msg.c_str(), level, __FILELINE__.c_str(), ##__VA_ARGS__); 
+        printf(msg.c_str(), level, __FILELINE__.c_str(), ##__VA_ARGS__);}
     #define SAGA_INFO(message, ...)       SAGA_LOG("INFO", message, ##__VA_ARGS__)
     #define SAGA_WARNING(message, ...)    SAGA_LOG("WARNING", message, ##__VA_ARGS__)
     #define SAGA_ERROR(message, ...)      SAGA_LOG("ERROR", message, ##__VA_ARGS__)

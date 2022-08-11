@@ -62,13 +62,20 @@ namespace SAGA {
         while(s_isRunning) {
             SDL_Event event;
             m_inputs->DispatchInputEvents();
-            if (m_inputs->IsKey(SDL_SCANCODE_ESCAPE)) {
+
+            if (m_inputs->IsMouseButtonDown(SDL_BUTTON_LEFT)) {
+                SAGA_INFO("Mouse button left is down");
+                auto mousePosition = m_inputs->GetMousePosition();
+                SAGA_INFO("(%f, %f)", mousePosition.x, mousePosition.y);
+            }
+
+            if (m_inputs->IsKeyDown(SDL_SCANCODE_ESCAPE)) {
                 s_isRunning = false;
             }
-            if (m_inputs->IsKey(SDL_SCANCODE_F)) {
+            if (m_inputs->IsKeyDown(SDL_SCANCODE_F)) {
                 SDL_SetWindowFullscreen(m_window, SDL_WINDOW_FULLSCREEN_DESKTOP);
             }
-            if (m_inputs->IsKey(SDL_SCANCODE_A)) {
+            if (m_inputs->IsKeyDown(SDL_SCANCODE_A)) {
                 SAGA_INFO("Hello World!");
             }
             SDL_RenderClear(m_renderer);

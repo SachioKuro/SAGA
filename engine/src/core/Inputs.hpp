@@ -13,6 +13,13 @@
 
 
 namespace SAGA {
+    struct MouseState {
+        glm::vec2 position;
+        glm::vec2 motion;
+        glm::vec2 wheel;
+        std::bitset<7> buttons;
+    };
+
     class SAGA_API Inputs {
     public:
         static const uint8_t* keyboard;
@@ -21,8 +28,16 @@ namespace SAGA {
 
         void InitInputs(SDL_Window*);
         void DispatchInputEvents();
-        bool IsKey(int);
+        
+        bool IsKeyDown(int);
+
+        glm::vec2 GetMousePosition() const;
+        glm::vec2 GetMouseMotion() const;
+        glm::vec2 GetMouseWheel() const;
+        bool IsMouseButtonDown(int) const;
     private:
+        static MouseState s_mouseState;
+
         EventDispatcherService* m_eventDispatcher;
     };
 }
