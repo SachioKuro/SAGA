@@ -1,9 +1,9 @@
 #pragma once
 
 #include "pch.hpp"
-#include "Extent.hpp"
-#include "Version.hpp"
-#include "Inputs.hpp"
+#include "core/Extent.hpp"
+#include "core/Version.hpp"
+#include "core/Inputs.hpp"
 
 #include "service/EventDispatcherService.hpp"
 #include "event/EventDispatcher.hpp"

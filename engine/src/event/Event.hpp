@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../pch.hpp"
-#include "core/Bit.hpp"
+#include "../pch.hpp"
+#include "../core/Bit.hpp"
 
 namespace SAGA {
     using EventId = uint32_t;

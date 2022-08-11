@@ -1,4 +1,4 @@
-#include <core/Entry.hpp>
+#include <Entry.hpp>
 
 
 SAGA::Application* SAGA::CreateApp() {

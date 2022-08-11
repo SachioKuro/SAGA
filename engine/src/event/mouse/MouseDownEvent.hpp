@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../../pch.hpp"
-#include "../../TypeId.hpp"
+#include "../../pch.hpp"
+#include "../../core/TypeId.hpp"
 #include "Mouse.hpp"
 
 namespace SAGA {
