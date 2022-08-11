@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../pch.hpp"
-#include "../event/EventDispatcher.hpp"
-#include "../service/Locator.hpp"
-#include "../event/system/SystemQuitEvent.hpp"
-#include "../event/keyboard/KeyDownEvent.hpp"
-#include "../event/keyboard/KeyUpEvent.hpp"
-#include "../event/mouse/MouseDownEvent.hpp"
-#include "../event/mouse/MouseUpEvent.hpp"
-#include "../event/mouse/MouseMotionEvent.hpp"
-#include "../event/mouse/MouseWheelEvent.hpp"
+#include "pch.hpp"
+#include "event/EventDispatcher.hpp"
+#include "service/Locator.hpp"
+#include "event/system/SystemQuitEvent.hpp"
+#include "event/keyboard/KeyDownEvent.hpp"
+#include "event/keyboard/KeyUpEvent.hpp"
+#include "event/mouse/MouseDownEvent.hpp"
+#include "event/mouse/MouseUpEvent.hpp"
+#include "event/mouse/MouseMotionEvent.hpp"
+#include "event/mouse/MouseWheelEvent.hpp"
 
 
 namespace SAGA {

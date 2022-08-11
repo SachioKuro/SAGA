@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../service/EventDispatcherService.hpp"
+#include "service/EventDispatcherService.hpp"
 
 namespace SAGA {
     class EventDispatcher: public EventDispatcherService {

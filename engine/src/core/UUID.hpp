@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../pch.hpp"
+#include "pch.hpp"
 
 namespace SAGA {
     using uuid64 = size_t;

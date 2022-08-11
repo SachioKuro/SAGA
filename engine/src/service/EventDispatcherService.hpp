@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../event/Event.hpp"
+#include "event/Event.hpp"
 
 namespace SAGA {
     using EventCallback = std::function<void(const Event*)>;

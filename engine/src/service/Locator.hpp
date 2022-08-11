@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../pch.hpp"
-#include "../core/TypeId.hpp"
+#include "pch.hpp"
+#include "core/TypeId.hpp"
 
 namespace SAGA {
     class Locator {

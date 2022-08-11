@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../pch.hpp"
+#include "pch.hpp"
 
 namespace SAGA {
     SAGA_INLINE const uint32_t GetUniqueTypeID() {
