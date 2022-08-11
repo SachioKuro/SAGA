@@ -31,6 +31,7 @@ set(SDL2_IMAGE_INCLUDE "/opt/homebrew/Cellar/sdl2_image/2.6.0_1/include")
 set(SDL2_MIXER_INCLUDE "/opt/homebrew/Cellar/sdl2_mixer/2.6.0/include")
 set(SDL2_TTF_INCLUDE "/opt/homebrew/Cellar/sdl2_ttf/2.20.0/include")
 set(FMT_INCLUDE "vendor/fmt-9.0.0/include")
+set(GLM_INCLUDE "vendor/glm")
 include_directories(
     ${SDL2_CORE_INCLUDE}
     ${SDL2_INCLUDE}
@@ -38,8 +39,10 @@ include_directories(
     ${SDL2_MIXER_INCLUDE}
     ${SDL2_TTF_INCLUDE}
     ${FMT_INCLUDE}
+    ${GLM_INCLUDE}
 )
 
 add_subdirectory(engine)
 add_subdirectory(game)
 add_subdirectory(vendor/fmt-9.0.0)
+add_subdirectory(vendor/glm)

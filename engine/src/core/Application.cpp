@@ -53,6 +53,9 @@ namespace SAGA {
         
         m_inputs = new Inputs();
         m_inputs->InitInputs(m_window);
+
+        glm::vec3 vector = glm::vec3(-1.0f, 7.0f, 10.0f);
+        SAGA_INFO(std::to_string(vector.length()));
     }
 
     void Application::Run() {

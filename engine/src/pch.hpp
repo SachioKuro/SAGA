@@ -23,6 +23,8 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_ttf.h>
 
+#include <glm/glm.hpp>
+
 #include "core/Logging.hpp"
 #include "core/Assert.hpp"
 
