@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Mac launch",
+            "type": "cppdbg",
+            "MIMode": "lldb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/build/bin",
+            "program": "${workspaceFolder}/build/bin/SAGA_sandbox",
+        }
+    ]
+}
